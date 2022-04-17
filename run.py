@@ -42,46 +42,47 @@ print("")
 print('Thank you! I will now consult the cosmos and return your Zodiac sign\n')
 
 """
-
+Depending on user input, if/elif statement will calculate which
+sign to display after user inputs date of birth
 """
 
 if ((int(Month) == 1 and int(Day) >= 20)
         or (int(Month) == 2 and int(Day) <= 18)):
-    sign = ("\n Aquarius")
+    sign = ("Aquarius")
 
 elif ((int(Month) == 2 and int(Day) >= 19)
         or (int(Month) == 3 and int(Day) <= 20)):
-    sign = ("\n Pisces")
+    sign = ("Pisces")
 elif ((int(Month) == 3 and int(Day) >= 21)
         or (int(Month) == 4 and int(Day) <= 19)):
-    sign = ("\n Aries")
+    sign = ("Aries")
 elif ((int(Month) == 4 and int(Day) >= 20)
         or (int(Month) == 5 and int(Day) <= 20)):
-    sign = ("\n Taurus")
+    sign = ("Taurus")
 elif ((int(Month) == 5 and int(Day) >= 21)
         or (int(Month) == 6 and int(Day) <= 20)):
-    sign = ("\n Gemini")
+    sign = ("Gemini")
 elif ((int(Month) == 6 and int(Day) >= 21)
         or (int(Month) == 7 and int(Day) <= 22)):
-    sign = ("\n Cancer")
+    sign = ("Cancer")
 elif ((int(Month) == 7 and int(Day) >= 23)
         or (int(Month) == 8 and int(Day) <= 22)):
-    sign = ("\n Leo")
+    sign = ("Leo")
 elif ((int(Month) == 8 and int(Day) >= 23)
         or (int(Month) == 9 and int(Day) <= 22)):
-    sign = ("\n Virgo")                               
+    sign = ("Virgo")                               
 elif ((int(Month) == 9 and int(Day) >= 23)
         or (int(Month) == 10 and int(Day) <= 22)):
-    sign = ("\n Libra")
+    sign = ("Libra")
 elif ((int(Month) == 10 and int(Day) >= 23)
         or (int(Month) == 11 and int(Day) <= 21)):
-    sign = ("\n Scorpio")  
+    sign = ("Scorpio")  
 elif ((int(Month) == 11 and int(Day) >= 22)
         or (int(Month) == 12 and int(Day) <= 21)):
-    sign = ("\n Sagittarius")
+    sign = ("Sagittarius")
 elif ((int(Month) == 12 and int(Day) >= 22)
         or (int(Month) == 1 and int(Day) <= 19)):
-    sign = ("\n Capricorn")  
+    sign = ("Capricorn")  
 
 print("Calculating...\n")
 time.sleep(1)
@@ -89,6 +90,7 @@ print("Consulting the cosmos...\n")
 time.sleep(1)
 print("Searching the stars...\n")
 time.sleep(1)
-print("Diving deep into the Zodiac...")
+print("Diving deep into the Zodiac...\n")
 time.sleep(1)
+print('Your zodiac sign is ...')
 print(sign)

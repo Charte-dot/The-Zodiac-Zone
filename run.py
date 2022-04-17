@@ -70,19 +70,19 @@ elif ((int(Month) == 7 and int(Day) >= 23)
     sign = ("Leo")
 elif ((int(Month) == 8 and int(Day) >= 23)
         or (int(Month) == 9 and int(Day) <= 22)):
-    sign = ("Virgo")                               
+    sign = ("Virgo")
 elif ((int(Month) == 9 and int(Day) >= 23)
         or (int(Month) == 10 and int(Day) <= 22)):
     sign = ("Libra")
 elif ((int(Month) == 10 and int(Day) >= 23)
         or (int(Month) == 11 and int(Day) <= 21)):
-    sign = ("Scorpio")  
+    sign = ("Scorpio")
 elif ((int(Month) == 11 and int(Day) >= 22)
         or (int(Month) == 12 and int(Day) <= 21)):
     sign = ("Sagittarius")
 elif ((int(Month) == 12 and int(Day) >= 22)
         or (int(Month) == 1 and int(Day) <= 19)):
-    sign = ("Capricorn")  
+    sign = ("Capricorn")
 
 print("Calculating...\n")
 time.sleep(1)
@@ -92,5 +92,7 @@ print("Searching the stars...\n")
 time.sleep(1)
 print("Diving deep into the Zodiac...\n")
 time.sleep(1)
-print('Your zodiac sign is ...')
-print(sign)
+print('Your zodiac sign is ...' "" + sign)
+print("")
+time.sleep(2)
+print('Generating horoscope for' "" + sign)

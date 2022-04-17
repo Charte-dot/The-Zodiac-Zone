@@ -20,7 +20,7 @@ print('And get a personalized horoscope for your sign\n')
 print('Please enter you name to begin\n')
 name = input()
 print('Hello ' + name)
-print('Please enter your Birthdate\n')
+print('Please enter your day and month of Birth\n')
 
 """
 This function only excepts numbers from user input
@@ -28,16 +28,25 @@ for date of birth
 """
 
 
+def Month():
+    
+    Month = int(input("What's your month of birth?: [ex: 10]\n"))
+    
+
+def Day():
+    
+    Day = int(input("What is the  day of birth?: [ex: 10]\n"))    
+
+
 while True:
     try:
-        Year = int(input("What's your year of birth?: [ex: 1980]\n"))
         Month = int(input("What's your month of birth?: [ex: 10]\n"))
-        Day = int(input("What's your day of birth?: [ex: 01]\n"))
+        Day = int(input("What is the day of your birth?: [ex: 10]\n"))
         break
     except ValueError:
         print("Error please input numbers only...")
-        continue
-print("")
+    continue
+
 print("")
 print('Thank you! I will now consult the cosmos and return your Zodiac sign\n')
 
@@ -92,7 +101,7 @@ print("Searching the stars...\n")
 time.sleep(1)
 print("Diving deep into the Zodiac...\n")
 time.sleep(1)
-print('Your zodiac sign is ...' "" + sign)
+print('Your zodiac sign is ...' " " + sign)
 print("")
 time.sleep(2)
-print('Generating horoscope for' "" + sign)
+print('Generating horoscope for' " " + sign)

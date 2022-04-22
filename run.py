@@ -24,7 +24,7 @@ print('Please enter your day and month of Birth\n')
 first = [
         "Today is perfect for new endeavors.",
         "Today is the day to cherish and embrace others.",
-        "The tensions of this week will feel heavier today than yesterday.", 
+        "The tensions of this week will feel heavier today than yesterday.",
         "Making yourself useful is a main component of a successful day.",
         "Today, exercise caution when crossing the street.\n"]
 
@@ -54,7 +54,7 @@ for month of birth
             print("Sorry, I didn't understand that.")
             continue
 
-        if month(int) not in range(1, 13):
+        if month(int) not in range(13):
             return False
             print("Sorry, your response must be a number between 1 and 12.")
             continue
@@ -78,7 +78,7 @@ for day of birth
             print("Sorry, I didn't understand that.")
             continue
 
-        if day(int) not in range(1, 32):
+        if day(int) not in range(32):
             return False
             print("Sorry, your response must be a number between 1 and 31.")
             continue
@@ -92,11 +92,16 @@ day = int(input("What is your day of birth?: [ex: 10]\n"))
 print("")
 print('Thank you! I will now consult the cosmos and return your Zodiac sign\n')
 
-"""
-Depending on user input, if/elif statement will calculate which
+
+def sign():
+
+    """
+    Depending on user input, if/elif statement will calculate which
 sign to display after user inputs date of birth
 """
 # returns Aquarius if user input is within month and day parameters
+
+
 if ((int(month) == 1 and int(day) >= 20)
         or (int(month) == 2 and int(day) <= 18)):
     sign = ("Aquarius")
@@ -136,16 +141,17 @@ elif ((int(month) == 8 and int(day) >= 23)
         or (int(month) == 9 and int(day) <= 22)):
     sign = ("Virgo")
 
-
 # displays Libra if user input is within month and day parameters
 elif ((int(month) == 9 and int(day) >= 23)
         or (int(month) == 10 and int(day) <= 22)):
     sign = ("Libra")
 
+
 # displays Scorpio if user input is within month and day parameters
 elif ((int(month) == 10 and int(day) >= 23)
         or (int(month) == 11 and int(day) <= 21)):
     sign = ("Scorpio")
+
 
 # displays Sagittarius if user input is within month and day parameters
 elif ((int(month) == 11 and int(day) >= 22)
@@ -170,3 +176,81 @@ print('Your zodiac sign is ...' " " + sign)
 print("")
 time.sleep(2)
 print('Generating horoscope for' " " + sign)
+
+
+"""
+    Depending on output from signs calculation if/elif statement will 
+    randomly choose a horoscope text to display.
+"""
+
+if ("Aquarius"):
+    print(
+        "Your personal horoscope for Aqurius is...",
+        random.choice(first), random.choice(second),
+        random.choice(third))
+
+elif ("Pisces"):
+    print(
+            "Your personal horoscope for Pisces is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))
+
+elif ("Aries"):
+    print(
+            "Your personal horoscope for Aries is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))
+
+elif ("Taurus"):
+    print(
+            "Your personal horoscope for Taurus is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))
+
+elif ("Gemini"):
+    print(
+            "Your personal horoscope for Gemini is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))
+
+elif ("Cancer"):
+    print(
+            "Your personal horoscope for Aqurius is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))
+
+elif ("Leo"):
+    print(
+            "Your personal horoscope for Leo is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))
+
+elif ("Virgo"):
+    print(
+            "Your personal horoscope for Virgo is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))
+
+elif ("Libra"):
+    print(
+            "Your personal horoscope for Libra is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))
+
+elif ("Scorpio"):
+    print(
+            "Your personal horoscope for Scorpio is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))
+
+elif ("Sagittarius"):
+    print(
+            "Your personal horoscope for Sagittarius is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))
+
+elif ("Capricorn"):
+    print(
+            "Your personal horoscope for Capricorn is...",
+            random.choice(first), random.choice(second),
+            random.choice(third))

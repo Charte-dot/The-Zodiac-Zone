@@ -1,5 +1,9 @@
+import os
 import random
 import time
+from datetime import date
+from random import randint
+
 
 print(r'***********************************************************')
 print(r'____________________        ______________________  ______ ')
@@ -41,6 +45,8 @@ third = [
         "Luck is on your side today, so seize it! ",
         "Things are looking up for you!\n"]
 
+color = ["blue", "pink", "red", "navy", "green", "black", "yellow", ]
+
 
 def month(int):
     """
@@ -49,13 +55,12 @@ for month of birth
 """
     while True:
         try:
-            month = int(input)
+            month = int(input("What is your month of birth?: [ex: 10]\n"))
         except ValueError:
             print("Sorry, I didn't understand that.")
             continue
 
-        if month(int) not in range(13):
-            return False
+        if month(int) not in range(1, 13):
             print("Sorry, your response must be a number between 1 and 12.")
             continue
         else:
@@ -63,7 +68,7 @@ for month of birth
     return month
 
 
-month = int(input("What is your Month of birth?:\n"))
+Month = int(input("What is your month of birth?: [ex: 10]\n"))
 
 
 def day(int):
@@ -73,13 +78,12 @@ for day of birth
 """
     while True:
         try:
-            day = int(input)
+            day = int(input("What is your day of birth?: [ex: 10]\n"))
         except ValueError:
             print("Sorry, I didn't understand that.")
             continue
 
-        if day(int) not in range(32):
-            return False
+        if day(int) not in range(1, 32):
             print("Sorry, your response must be a number between 1 and 31.")
             continue
         else:
@@ -91,6 +95,8 @@ day = int(input("What is your day of birth?: [ex: 10]\n"))
 
 print("")
 print('Thank you! I will now consult the cosmos and return your Zodiac sign\n')
+time.sleep(3)
+os.system('cls||clear')
 
 
 def sign():
@@ -171,86 +177,27 @@ time.sleep(1)
 print("Searching the stars...\n")
 time.sleep(1)
 print("Diving deep into the Zodiac...\n")
-time.sleep(1)
+time.sleep(2)
 print('Your zodiac sign is ...' " " + sign)
 print("")
 time.sleep(2)
 print('Generating horoscope for' " " + sign)
+time.sleep(4)
+print("")
+# Current date calculator
+today = date.today()
+date = today.strftime("%B %d, %Y")
+
+# Print random generated horoscope
+print(
+    "Your Horoscope for date \n:",
+    random.choice(first), random.choice(second),
+    random.choice(third))
+print("")
+# prints  6 random generated lotto numbers
+print("You Lucky Lotto numbers for your sign are...\n")
+
+lotto = random.sample(range(0, 48), 6)
+print(lotto)
 
 
-"""
-    Depending on output from signs calculation if/elif statement will 
-    randomly choose a horoscope text to display.
-"""
-
-if ("Aquarius"):
-    print(
-        "Your personal horoscope for Aqurius is...",
-        random.choice(first), random.choice(second),
-        random.choice(third))
-
-elif ("Pisces"):
-    print(
-            "Your personal horoscope for Pisces is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))
-
-elif ("Aries"):
-    print(
-            "Your personal horoscope for Aries is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))
-
-elif ("Taurus"):
-    print(
-            "Your personal horoscope for Taurus is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))
-
-elif ("Gemini"):
-    print(
-            "Your personal horoscope for Gemini is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))
-
-elif ("Cancer"):
-    print(
-            "Your personal horoscope for Aqurius is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))
-
-elif ("Leo"):
-    print(
-            "Your personal horoscope for Leo is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))
-
-elif ("Virgo"):
-    print(
-            "Your personal horoscope for Virgo is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))
-
-elif ("Libra"):
-    print(
-            "Your personal horoscope for Libra is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))
-
-elif ("Scorpio"):
-    print(
-            "Your personal horoscope for Scorpio is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))
-
-elif ("Sagittarius"):
-    print(
-            "Your personal horoscope for Sagittarius is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))
-
-elif ("Capricorn"):
-    print(
-            "Your personal horoscope for Capricorn is...",
-            random.choice(first), random.choice(second),
-            random.choice(third))

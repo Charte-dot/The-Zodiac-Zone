@@ -192,31 +192,40 @@ time.sleep(2)
 print('Generating horoscope for' " " + sign)
 time.sleep(4)
 print("")
+
 # Current date calculator
 today = date.today()
-d1 = today.strftime("%B %d, %Y")
+date = today.strftime("%d/%m/%Y")
 
 # Print random generated horoscope
 print(
-    "Your Horoscope for d1 \n",
+    "Your Horoscope for:\n", date,
     random.choice(first), random.choice(second),
     random.choice(third))
+
 print("")
+time.sleep(2)
+
 # prints  6 random generated lotto numbers
 print("You Lucky Lotto numbers for your sign are...\n")
 
 lotto = random.sample(range(0, 48), 6)
 print(lotto)
+
 print("")
+time.sleep(2)
 
 # prints lucky color
 print(
     "Your luck color for today is....\n",
     random.choice(color))
+
 print("")
+time.sleep(2)
 
 
 # prints a sign to for user to get to know
 print(
     "The sign to get flirty with today is...\n",
     random.choice(star))
+

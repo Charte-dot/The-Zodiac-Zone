@@ -45,7 +45,15 @@ third = [
         "Luck is on your side today, so seize it! ",
         "Things are looking up for you!\n"]
 
-color = ["blue", "pink", "red", "navy", "green", "black", "yellow", ]
+color = [
+        "Red", "Green", "Orange", "White", "Black", "Purple", "Silver",
+        "Brown", "Gray", "Pink", "Cream", "Gold", "Teal", "Navy Blue",
+        "Turquoise", "Amber", "Mint"]
+
+star = [
+        "An Aries", "A Taurus", "A Gemini", "A Cancer", " A Leo", "A Virgo",
+        "A Libra", " A Scorpio", "A Sagittarius", "A Capricorn", "An Aquarius",
+        "A Pisces"]
 
 
 def month(int):
@@ -55,7 +63,7 @@ for month of birth
 """
     while True:
         try:
-            month = int(input("What is your month of birth?: [ex: 10]\n"))
+            month = int(input("What is your month of birth?\n"))
         except ValueError:
             print("Sorry, I didn't understand that.")
             continue
@@ -68,7 +76,7 @@ for month of birth
     return month
 
 
-Month = int(input("What is your month of birth?: [ex: 10]\n"))
+month = int(input("What is your month of birth?\n"))
 
 
 def day(int):
@@ -78,7 +86,7 @@ for day of birth
 """
     while True:
         try:
-            day = int(input("What is your day of birth?: [ex: 10]\n"))
+            day = int(input("What is your day of birth?:\n"))
         except ValueError:
             print("Sorry, I didn't understand that.")
             continue
@@ -91,7 +99,7 @@ for day of birth
     return day
 
 
-day = int(input("What is your day of birth?: [ex: 10]\n"))
+day = int(input("What is your day of birth?:\n"))
 
 print("")
 print('Thank you! I will now consult the cosmos and return your Zodiac sign\n')
@@ -186,11 +194,11 @@ time.sleep(4)
 print("")
 # Current date calculator
 today = date.today()
-date = today.strftime("%B %d, %Y")
+d1 = today.strftime("%B %d, %Y")
 
 # Print random generated horoscope
 print(
-    "Your Horoscope for date \n:",
+    "Your Horoscope for d1 \n",
     random.choice(first), random.choice(second),
     random.choice(third))
 print("")
@@ -199,5 +207,16 @@ print("You Lucky Lotto numbers for your sign are...\n")
 
 lotto = random.sample(range(0, 48), 6)
 print(lotto)
+print("")
+
+# prints lucky color
+print(
+    "Your luck color for today is....\n",
+    random.choice(color))
+print("")
 
 
+# prints a sign to for user to get to know
+print(
+    "The sign to get flirty with today is...\n",
+    random.choice(star))

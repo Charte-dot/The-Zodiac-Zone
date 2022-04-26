@@ -17,14 +17,6 @@ print("")
 print("")
 print("")
 
-print('Welcome to The Zodiac Zone\n')
-print('The place to find out you Zodiac sign\n')
-print('And get a personalized horoscope for your sign\n')
-print('Please enter you name to begin\n')
-name = input()
-print('Hello ' + name)
-print('Please enter your day and month of Birth\n')
-
 first = [
         "Today is perfect for new endeavors.",
         "Today is the day to cherish and embrace others.",
@@ -54,6 +46,21 @@ star = [
         "An Aries", "A Taurus", "A Gemini", "A Cancer", " A Leo", "A Virgo",
         "A Libra", " A Scorpio", "A Sagittarius", "A Capricorn", "An Aquarius",
         "A Pisces"]
+
+
+def zodiac():
+    print('Welcome to The Zodiac Zone\n')
+    print('The place to find out you Zodiac sign\n')
+    print('And get a personalized horoscope for your sign\n')
+    print('Please enter you name to begin\n')
+    name = input()
+    print("")
+    print('Hello ' + name)
+    print("")
+    print("Please enter your Month and Day of Birth\n")
+
+
+zodiac = zodiac()
 
 
 def month():
@@ -102,6 +109,7 @@ for day of birth
 
 
 day = day()
+
 
 print("")
 print('Thank you! I will now consult the cosmos and return your Zodiac sign\n')
@@ -231,12 +239,28 @@ print(
     "The sign to get flirty with today is...\n",
     random.choice(star))
 time.sleep(5)
-print("Would you like another Horoscope?")
 
 
-def replay():
-    
+def retry():
+
     """
     asks player if they want to play again. If yes, program restarts,
     if no program exits
 """
+    print("Would you like another Horoscope? type y/n:")
+    reply = input().lower()
+    if reply == 'y':
+        zodiac()
+
+    # if no, stop the execution of the program
+    elif reply == 'n':
+        print("Thank you for playing, I hope you have a great day")
+        exit()
+
+    # in case of an invalid response, ask the player to enter a valid choice
+    else:
+        print('Apologies, Please enter Y or a N.')
+        retry()
+
+
+zodiac = zodiac()

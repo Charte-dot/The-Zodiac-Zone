@@ -228,25 +228,19 @@ def main():
         random.choice(star))
     time.sleep(5)
 
-    def retry():
-        """
-        asks player if they want to play again. If yes, program restarts,
-        if no program exits
-    """
-        print("Would you like another Horoscope? type y/n:")
-        answer = input().lower()
-    if answer == 'y':
+    print("Would you like another Horoscope? type Y/N:")
+    answer = input()
+    if answer == 'y' or 'Y':
         main()
-
-        # if no, stop the execution of the program
-    elif answer == 'n':
+    
+    # if no, stop the execution of the program
+    elif answer == 'n' or 'N':
         print("Thank you for playing, I hope you have a great day")
-        exit()
-
+        
     # in case of an invalid response, ask the player to enter a valid choice
     else:
+        # break
         print('Apologies, Please enter Y or a N.')
-        retry()
 
 
 main()

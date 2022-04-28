@@ -216,7 +216,7 @@ def main():
 
     # prints lucky color
     print(
-        "Your luck color for today is....\n",
+        "Your lucky color for today is....\n",
         random.choice(color))
 
     print("")
@@ -227,20 +227,22 @@ def main():
         "The sign to get flirty with today is...\n",
         random.choice(star))
     time.sleep(5)
+    print("")
+    while True:
+        answer = input("Would you like another Horoscope? type Y/N:").lower()
+        if answer == 'y':
+            main()
+            continue
 
-    print("Would you like another Horoscope? type Y/N:")
-    answer = input()
-    if answer == 'y' or 'Y':
-        main()
-    
     # if no, stop the execution of the program
-    elif answer == 'n' or 'N':
-        print("Thank you for playing, I hope you have a great day")
-        
+        elif answer == 'n':
+            print("Thank you for playing, I hope you have a great day!")
+            exit(0)
     # in case of an invalid response, ask the player to enter a valid choice
-    else:
-        # break
-        print('Apologies, Please enter Y or a N.')
+        else:
+            print('Apologies, Please enter Y or a N.')
+            return answer
+            exit(1)
 
 
 main()

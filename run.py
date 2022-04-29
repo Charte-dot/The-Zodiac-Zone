@@ -226,23 +226,24 @@ def main():
     print(
         "The sign to get flirty with today is...\n",
         random.choice(star))
-    time.sleep(5)
-    print("")
+    time.sleep(8)
+
+# restart or quit application depending on user input
+
     while True:
-        answer = input("Would you like another Horoscope? type Y/N:").lower()
+        answer = input("Would you like another Horoscope? Enter y/n:").lower()
         if answer == 'y':
+            os.system('cls||clear')
             main()
             continue
 
-    # if no, stop the execution of the program
+        # if no, stop the execution of the program
         elif answer == 'n':
             print("Thank you for playing, I hope you have a great day!")
-            exit(0)
-    # in case of an invalid response, ask the player to enter a valid choice
+            exit(1)
+        # if invalid response, ask the player to enter a valid choice
         else:
             print('Apologies, Please enter Y or a N.')
-            return answer
-            exit(1)
 
 
 main()

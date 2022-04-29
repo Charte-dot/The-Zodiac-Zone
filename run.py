@@ -75,6 +75,7 @@ def main():
                 continue
             else:
                 break
+
         return month
 
     month = month()
@@ -96,6 +97,18 @@ def main():
             if day not in range(1, 32):
                 print("Sorry, your reply must be a number between 1 and 31.")
                 continue
+            if month in (1, 3, 4, 7, 10, 12):
+                max_days = 31
+            elif month in (4, 6, 9, 11):
+                max_days = 30
+            elif month == 2:
+                max_days = 29
+            else:
+                break
+            if month < 1 or month > 12:
+                print("Entered invalid date")
+            elif day < 1 or day > max_days:
+                print("Entered invalid day")
             else:
                 break
         return day

@@ -3,7 +3,6 @@ def main():
     import os
     import random
     import time
-    from datetime import date
     from random import randint
 
     print(r'***********************************************************')
@@ -205,13 +204,9 @@ def main():
 
     sign(day, month)
 
-    # Current date calculator
-    today = date.today()
-    date = today.strftime("%d/%m/%Y")
-
     # Print random generated horoscope
     print(
-        "Your Horoscope for:\n", date,
+        "Your Horoscope today is....\n",
         random.choice(first), random.choice(second),
         random.choice(third))
 

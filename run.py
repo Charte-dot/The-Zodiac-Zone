@@ -127,63 +127,63 @@ def main():
     """
     # returns Aquarius if user input is within month and day parameters
 
-        if ((int(month) == 1 and int(day) >= 20)
-                or (int(month) == 2 and int(day) <= 18)):
+        if ((int(month) == 1 and int(day) >= 20) or
+                (int(month) == 2 and int(day) <= 18)):
             sign = ("Aquarius")
 
         # returns Pisces if user input is within month and day parameters
-        elif ((int(month) == 2 and int(day) >= 19)
-                or (int(month) == 3 and int(day) <= 20)):
+        elif ((int(month) == 2 and int(day) >= 19) or
+                (int(month) == 3 and int(day) <= 20)):
             sign = ("Pisces")
 
         # displays Aries if user input is within month and day parameters
-        elif ((int(month) == 3 and int(day) >= 21)
-                or (int(month) == 4 and int(day) <= 19)):
+        elif ((int(month) == 3 and int(day) >= 21) or
+                (int(month) == 4 and int(day) <= 19)):
             sign = ("Aries")
 
         # displays Taurus if user input is within month and day parameters
-        elif ((int(month) == 4 and int(day) >= 20)
-                or (int(month) == 5 and int(day) <= 20)):
+        elif ((int(month) == 4 and int(day) >= 20) or
+                (int(month) == 5 and int(day) <= 20)):
             sign = ("Taurus")
 
         # displays Gemini if user input is within month and day parameters
-        elif ((int(month) == 5 and int(day) >= 21)
-                or (int(month) == 6 and int(day) <= 20)):
+        elif ((int(month) == 5 and int(day) >= 21) or
+                (int(month) == 6 and int(day) <= 20)):
             sign = ("Gemini")
 
         # displays Cancer if user input is within month and day parameters
-        elif ((int(month) == 6 and int(day) >= 21)
-                or (int(month) == 7 and int(day) <= 22)):
+        elif ((int(month) == 6 and int(day) >= 21) or
+                (int(month) == 7 and int(day) <= 22)):
             sign = ("Cancer")
 
         # displays Leo if user input is within month and day parameters
-        elif ((int(month) == 7 and int(day) >= 23)
-                or (int(month) == 8 and int(day) <= 22)):
+        elif ((int(month) == 7 and int(day) >= 23) or
+                (int(month) == 8 and int(day) <= 22)):
             sign = ("Leo")
 
         # displays Virgo if user input is within month and day parameters
-        elif ((int(month) == 8 and int(day) >= 23)
-                or (int(month) == 9 and int(day) <= 22)):
+        elif ((int(month) == 8 and int(day) >= 23) or
+                (int(month) == 9 and int(day) <= 22)):
             sign = ("Virgo")
 
         # displays Libra if user input is within month and day parameters
-        elif ((int(month) == 9 and int(day) >= 23)
-                or (int(month) == 10 and int(day) <= 22)):
+        elif ((int(month) == 9 and int(day) >= 23) or
+                (int(month) == 10 and int(day) <= 22)):
             sign = ("Libra")
 
         # displays Scorpio if user input is within month and day parameters
-        elif ((int(month) == 10 and int(day) >= 23)
-                or (int(month) == 11 and int(day) <= 21)):
+        elif ((int(month) == 10 and int(day) >= 23) or
+                (int(month) == 11 and int(day) <= 21)):
             sign = ("Scorpio")
 
         # displays Sagittarius if user input is within month and day parameters
-        elif ((int(month) == 11 and int(day) >= 22)
-                or (int(month) == 12 and int(day) <= 21)):
+        elif ((int(month) == 11 and int(day) >= 22) or
+                (int(month) == 12 and int(day) <= 21)):
             sign = ("Sagittarius")
 
         # displays Capricorn if user input is within month and day parameters
-        elif ((int(month) == 12 and int(day) >= 22)
-                or (int(month) == 1 and int(day) <= 19)):
+        elif ((int(month) == 12 and int(day) >= 22) or
+                (int(month) == 1 and int(day) <= 19)):
             sign = ("Capricorn")
 
         # count down display

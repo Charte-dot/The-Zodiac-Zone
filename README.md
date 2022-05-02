@@ -1,31 +1,65 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Zodiac Zone
 
-Welcome Caroline Harte,
+![Initial screenshot](media/screenshot.png)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
-## Reminders
+### **[Live link to deployed application.](https://zodiac-zone.herokuapp.com/)**
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+# Table of contents:
+- ##  [Context](#context)
+- ##  [Design](#Design)
+     - [Target audience](#Target-audience)
+     - [Overview](#Overview)
+     - [User Stories](#User-stories)
+     - [Flowchart](#Flowchart)
+# Context
 
-## Creating the Heroku app
+Zodiac zone is a random Horoscope generator. It uses the standard Western astrology and the twelve [Astrological signs](https://en.wikipedia.org/wiki/Astrological_sign) associated with western horoscopes.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+The application is simple:
+- Asks the user to input name.
+- Asks the user for Month of birth.
+- Asks the user for Day of birth.
+- Generates a random Horoscope and displays the outcome.
+- Provides user with random generated lucky lotto numbers
+- Provides user with random lucky color.
+- Provides the user with another zodiac sign the might like to get to know.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+This application is for fun and out come from the users input is generated randomly.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+# Design
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Target Audience
+ - Anyone who enjoys Zodiac related material.
+ - Any user who is interested in a short but fun application
+ - New Users who would like to try something fun and personal.
 
-Connect your GitHub repository and deploy as normal.
+## Overview
+  - Simple to use
+  - Responsive feedback
+  - Insightful but positive outcome from random generated horoscopes
+  - Fun and interactive application.
 
-## Constraints
+## User stories
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+  ### First time user:
+  1. To be able to access the application with ease.
+  2. Have clear navigation.
+  3. Easy to read and understand instructions.
+  4. Fun interactive application
 
------
-Happy coding!
+  ### Returning user:
+  1. To be entertained.
+  2. Navigate with ease
+  3. Clear easy path to starting and restarting the application
+
+  ### As site owner:
+  1. To be able the output from the generated horoscopes
+  2. To make a fun and entertaining application
+  3. To make sure the user has fun using the application.
+
+  ## Flowchart
+
+![Wireframe](media/flowchart.png)
+
+I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first.This was to give me a template to follow and to make sure my original design that I had planned was the outcome and final layout of the application. This was an essential piece to the over all project as it helped me keep track of how the application would be displayed to the user and the steps the user would take within the application.

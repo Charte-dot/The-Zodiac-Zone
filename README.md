@@ -21,6 +21,22 @@
      - [User feedback](#User-feedback)
      - [Horoscope display](#Horoscope-display)
      - [End of application](#End-of-application)
+
+- ##  [Future Features](#Future-Features) 
+
+- ##  [Testing](#Testing)
+
+- ##  [Technologies Used](#Technologies-Used)
+     - [Languages](#Languages)
+     - [Libraries](#Libraries)
+
+- ##  [Bugs](#Bugs)
+     - [Unfixed Bugs](#Unfixed-bugs)
+
+- ##  [Validators](#Validators)
+    
+
+
 # Context
 
 Zodiac zone is a random Horoscope generator. It uses the standard Western astrology and the twelve [Astrological signs](https://en.wikipedia.org/wiki/Astrological_sign) associated with western horoscopes.
@@ -82,7 +98,7 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
 
   ## Existing features 
   - ## Application start 
-    - Main Screen with logo of application name.
+    - [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/#:~:text=pyfiglet%20takes%20ASCII%20text%20and,pyfiglet%20module%20%3A%20pip%20install%20pyfiglet) was installed and import pyfiglet was used to generate ASCII art for the title and subtitle of the game.
     - Welcome message.
     - Information about what the appliction is for. 
     - Text prompt for user to enter name.
@@ -130,5 +146,55 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
   
   ![Answer error](media/answer-error.png)
   
+------
 
+- # Future Features
+   - To give the option for Western or Chinese Astrology
+   - To take input of Year of Birth to calculate Chinese Astrology sign.
+   - Nicer background design to brighten up the terminal that application is displayed on.
+---
+
+- # Testing
+
+- I manually tested the application through [PEP8 online check](http://pep8online.com/). 
+- I manually testing the application in github by running Python3 run.py and inputting errors to test the error handling at multiple stages.
+- After deploying to Herouku I tested the application again to get errors displaying and working out any bugs I previouly over looked.
+
+![PEP8 online check results](media/pep8-test.png)
+
+---
+
+- # Technologies Used
+  - Github for my Respositiory for the application Zodiac Zone
+  - Gitpod for coding the application
+  - Heroku for Deployment of the application
+
+- ## Languages
+  - Python 
+
+- ## Libraries
+  -  import os
+  -  import random
+  -  import time
+  -  from random import randint
+  -  import pyfiglet 
+---
+
+- # Bugs
+
+- The month and day didn't throw error when a wrong day month combination or non numerical value was entered.
+  - Fixed: Error logic was correct but implementation was incorrect, removed integer (int) from the where I had had month and day defined.
+
+- The application would not except 29th of February as a Date of Birth. 
+  - Fixed: I had a import of datetime from date and this was counteracting the month and day input as it was seeing the user input as a date and not numerical values. As I wasn't working with dates exactly I removed this import and and adjusted the maximum day value to except 29th February as a date of Birth.  
+
+- PEP8 had amber warning "Line break before binary operator". I had several of these warning relating to a section of code.
+  - Fixed: The the lines of code in if , elif, else statement I used to calculate the month and day the user inputs to correspond with a star sign were too long. I had seperated the individual statements into two smaller lines. I placed the "OR" operator on the second line, when I should have had it at the end the first line. Correted this error and code passed PEP8
+
+- # Unfixed Bug
+ - No current unfixed bug known.
+
+- # Validators
+ - This project was validated with [PEP8 online check](http://pep8online.com/)
+ - After debugging process application passed without any errors. 
 

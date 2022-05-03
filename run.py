@@ -4,18 +4,10 @@ def main():
     import random
     import time
     from random import randint
+    import pyfiglet 
 
-    print(r'***********************************************************')
-    print(r' ____________________       ______________________  ______ ')
-    print(r'|___  /    \ |  \ | |   /\  | ___||__   /    \|  \ | | __| ')
-    print(r'   / /| /\ | ||\ \| |  /  \ | |      / /| /\ ||   \| | |_  ')
-    print(r'  / / | || | || | | | / /\ \| |     / / | || || |\ \ | __| ')
-    print(r' / /__| \/ | ||/ /| |/ ____ \ |__  / /__| \/ || | \  | |_  ')
-    print(r'/_____\____/ |_ / |_/_/    \_\____|_____\____/|_|  \ |___| ')
-    print(r'***********************************************************')
-    print("")
-    print("")
-    print("")
+    result = pyfiglet.figlet_format("Zodiac Zone")
+    print(result)
 
     first = [
             "Today is perfect for new endeavors.",
@@ -78,8 +70,6 @@ def main():
         return month
 
     month = month()
-
-    # month = int(input("What is your month of birth?\n"))
 
     def day():
         """

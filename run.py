@@ -96,7 +96,7 @@ def main():
             if day not in range(1, 32):
                 print("Sorry, your reply must be a number between 1 and 31.")
                 continue
-            if month in (1, 3, 4, 7, 10, 12):
+            if month in (1, 3, 5, 7, 10, 12):
                 max_days = 31
             elif month in (4, 6, 9, 11):
                 max_days = 30

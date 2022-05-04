@@ -1,7 +1,7 @@
 # Zodiac Zone
 
 
-### **[Live link to deployed application.](https://zodiac-zone.herokuapp.com/)**
+### **[Live link to Zodiac Zone.](https://zodiac-zone.herokuapp.com/)**
 ---
 
 
@@ -36,6 +36,8 @@
 - ##  [Validators](#Validators)
 
 - ##  [Deployment](#Deployment)
+
+- ##  [Credits](#Credits)
     
 
 
@@ -100,6 +102,7 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
 
   ## Existing features 
   - ## Application start 
+    - Main logo was created with [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/#:~:text=pyfiglet%20takes%20ASCII%20text%20and,1%3A%20Text%20in%20default%20font/) to generate ASCII art and give a nice aesthetic to an other wise plain terminal. This 
     - Landing page with application logo
     - Welcome message.
     - Information about what the appliction is for. 
@@ -136,6 +139,7 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
    - At the end of the horoscope generation cycle, User is asked if they want another horoscop
    - If the user inputs Y for another horoscope, appliction starts again.
    - If the user inputs N the applications ends.
+   - End text was created with [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/#:~:text=pyfiglet%20takes%20ASCII%20text%20and,1%3A%20Text%20in%20default%20font/) to generate ASCII art and add nice exit message for the user.
    
   ![End of application](media/end-game.png)
   
@@ -159,8 +163,10 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
 - # Testing
 
 - I manually tested the application through [PEP8 online check](http://pep8online.com/). 
-- I manually testing the application in github by running Python3 run.py and inputting errors to test the error handling at multiple stages.
-- After deploying to Herouku I tested the application again to get errors displaying and working out any bugs I previouly over looked.
+- I manually testing the application in github by running print() and inputting errors to test the error handling at multiple stages.
+- Errors or warnings were fixed as they appeared such as indentation errors, lines too long or extra space issues. This helped keep the code clean and readable so other errors or bugs that arose were identified more easily.
+- Any testing user inputs were printed back to the console to check all functions and methods were correctly applied to the input.
+- The game was deployed early on in development and checked regularly to ensure game flow and any errors were handled early on.
 
 ![PEP8 online check results](media/pep8-test.png)
 
@@ -170,6 +176,8 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
   - Github for my Respositiory for the application Zodiac Zone
   - Gitpod for coding the application
   - Heroku for Deployment of the application
+  - [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/#:~:text=pyfiglet%20takes%20ASCII%20text%20and,1%3A%20Text%20in%20default%20font/) was added to requirements.txt then for deployment to Heroku.
+  
 
 - ## Languages
   - Python 
@@ -192,12 +200,52 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
 
 - PEP8 had amber warning "Line break before binary operator". I had several of these warning relating to a section of code.
   - Fixed: The the lines of code in if , elif, else statement I used to calculate the month and day the user inputs to correspond with a star sign were too long. I had seperated the individual statements into two smaller lines. I placed the "OR" operator on the second line, when I should have had it at the end the first line. Correted this error and code passed PEP8
+----
 
 - # Unfixed Bug
  - No current unfixed bug known.
+
 
 - # Validators
  - This project was validated with [PEP8 online check](http://pep8online.com/)
  - After debugging process application passed without any errors. 
 
 - # Deployment
+The site was deployed via [Heroku]( https://id.heroku.com/login), and the live link can be found here: [Zodiac Zone](https://zodiac-zone.herokuapp.com/)
+
+- Before deploying to Heroku pip3 freeze > requirements.txt was used to add pyfiglet for deployment.
+
+This project was developed utilising the Code Institute Template. Due to security issues between Github and Heroku my project was deployed via Gitpod terminal manually to link Github and Heroku. Once the project was created config vars and buildpacks could be added to project within Heroku settings.
+
+1. Create an account on [Heroku]( https://id.heroku.com/login)
+2. In the terminal of your project that you want to deploy run the command heroku login -i and login with your credentials you use to create an account on Heroku when prompted.
+3. Run the command heroku create zodiac-zone --region=eu to create the new app with European region as it automatically defaults to U.S region.
+This will link it to your Gitpod terminal.
+4. The app is now accessible through the Heroku dashboard.
+5. In the settings options on heroku dashboard scroll down until you see config vars. Enter Key PORT and Value 8000 and add to app
+6. Under config vars is buildpack option, in this section you select buildpacks Python and Node js for the application to run.
+
+    Once the application has been created, steps to deploy the application:
+1. Run the command heroku login -i and log in with you Heroku dashboard credentials. Email and password use to set up Heroku.
+2. Then run the following command heroku git:remote -a Zodiac zone . This is for when you are sigining back into Heroku before pushing updated code to Heroku.
+3. After you app is linked to your work space you can deploy new version of the app to Heroku with the command git push heroku main.
+4. Your app is now deployed to Heroku
+---
+
+- # Credits
+- [Hackernoon]( https://hackernoon.com/want-to-learn-python-lets-do-it-with-horoscopes-raq44oo)
+  This site helped with the idea for the list to randomly generate the horoscope.
+
+- [Cppsecrets]( https://cppsecrets.com/users/5271114105115104979810446114107495548525364103109971051084699111109/Simple-Python-Projects-Simple-Zodiac-Sign-Teller.php)
+  After viewing a few horoscope generating projects, this site help me develop the if , elif, else statement used to calculate the month and day the user inputs to correspond with a star sign.
+
+- [Geeks-for-Geeks](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/#:~:text=pyfiglet%20takes%20ASCII%20text%20and,1%3A%20Text%20in%20default%20font)
+  Credit to geeks for geeks on how to use and impliment code for ASCII generated art for main logo and exit message.
+
+- [Amuls-Academy](https://www.youtube.com/watch?v=-Z5qhTocLSo)
+  During debugging process, I realised that month would take any day value inc 31 days in a month with only 30 days. So with the help of this video tutorial, I was able to implement code that would recognise 30 days in a 30 day month or throw and error if invalid combination.
+
+- [Python-Course.eu](https://python-course.eu/python-tutorial/errors-and-exception-handling.php)
+Error handling was a important part of the application development process. This site helped me understand and implement correct code to throw an error if user inputs an invalid entry.
+
+- I also used slack archives to help with debugging and heroku issues for deployment.

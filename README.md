@@ -34,6 +34,8 @@
      - [Unfixed Bugs](#Unfixed-bugs)
 
 - ##  [Validators](#Validators)
+
+- ##  [Deployment](#Deployment)
     
 
 
@@ -98,7 +100,7 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
 
   ## Existing features 
   - ## Application start 
-    - [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/#:~:text=pyfiglet%20takes%20ASCII%20text%20and,pyfiglet%20module%20%3A%20pip%20install%20pyfiglet) was installed and import pyfiglet was used to generate ASCII art for the title and subtitle of the game.
+    - Landing page with application logo
     - Welcome message.
     - Information about what the appliction is for. 
     - Text prompt for user to enter name.
@@ -198,3 +200,4 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
  - This project was validated with [PEP8 online check](http://pep8online.com/)
  - After debugging process application passed without any errors. 
 
+- # Deployment

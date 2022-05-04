@@ -1,20 +1,28 @@
-def main():
+''' zodiac zone imports '''
 
+
+def main():
+    # import os clears the terminal instead of constant scrolling text
     import os
+
+    # import random for random horoscope generation
     import random
+
+    # import time creates a delay in text appearing
     import time
+
+    # import random from random integer creates a random integer value
+    # from the given list/dictionary
     from random import randint
 
-    print(r' ___________________          ______________________  ___ ')
-    print(r' |___ /    \|  \ | |   /\   | ___| |___  /  \ |  \ | | __|')
-    print(r'   / /| /\ |||\ \| |  /  \  | |      / /| /\ ||   \| | |_ ')
-    print(r'  / / | || ||| | | | / /\ \ | |     / / | || || |\ \ | __|')
-    print(r'  / /_| \/ |||/ /| |/ ____ \| |__  / /__| \/ || | \  | |_ ')
-    print(r'/_____\____/|_ / |_/_/    \_\____|/_____\____/|_|  \_|___|')
-    print("")
-    print("")
-    print("")
+    import pyfiglet
 
+    # Main logo displayed on heading of terminal for application
+    title = pyfiglet.figlet_format(
+        "zodiac Zone", font="standard", justify="center")
+    print(title)
+
+    # List/ dictionary for random horoscope generation
     first = [
             "Today is perfect for new endeavors.",
             "Today is the day to cherish and embrace others.",
@@ -55,6 +63,7 @@ def main():
     print("")
     print("Please enter your Month and Day of Birth\n")
 
+    # Defines month funtion
     def month():
         """
     This function only excepts numbers from user input
@@ -77,6 +86,7 @@ def main():
 
     month = month()
 
+    # Defines day function
     def day():
         """
     This function only excepts numbers from user input
@@ -110,11 +120,13 @@ def main():
 
     day = day()
 
+    # prints out user feedback
     print("")
     print('Thank you! I will now consult the cosmos & return your star sign\n')
     time.sleep(3)
     os.system('cls||clear')
 
+    # Defines day and month and calculates which sign to display
     def sign(day, month):
 
         """
@@ -182,7 +194,7 @@ def main():
                 (int(month) == 1 and int(day) <= 19)):
             sign = ("Capricorn")
 
-        # count down display
+        # count down display and user feedback
         print("Calculating...\n")
         time.sleep(1)
         print("Consulting the cosmos...\n")
@@ -243,7 +255,10 @@ def main():
 
         # if no, stop the execution of the program
         elif answer == 'n':
-            print("Thank you for playing, I hope you have a great day!")
+            end = pyfiglet.figlet_format(
+                "I hope you have a Great day!",
+                font="standard", justify="center")
+            print(end)
             exit(1)
         # if invalid response, ask the player to enter a valid choice
         else:

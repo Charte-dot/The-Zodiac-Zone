@@ -4,10 +4,16 @@ def main():
     import random
     import time
     from random import randint
-    import pyfiglet
 
-    result = pyfiglet.figlet_format("Zodiac Zone")
-    print(result)
+    print(r' ___________________          ______________________  ___ ')
+    print(r' |___ /    \|  \ | |   /\   | ___| |___  /  \ |  \ | | __|')
+    print(r'   / /| /\ |||\ \| |  /  \  | |      / /| /\ ||   \| | |_ ')
+    print(r'  / / | || ||| | | | / /\ \ | |     / / | || || |\ \ | __|')
+    print(r'  / /_| \/ |||/ /| |/ ____ \| |__  / /__| \/ || | \  | |_ ')
+    print(r'/_____\____/|_ / |_/_/    \_\____|/_____\____/|_|  \_|___|')
+    print("")
+    print("")
+    print("")
 
     first = [
             "Today is perfect for new endeavors.",

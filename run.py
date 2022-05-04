@@ -15,11 +15,12 @@ def main():
     # from the given list/dictionary
     from random import randint
 
+    # pyfiglet for main logo font
     import pyfiglet
 
     # Main logo displayed on heading of terminal for application
     title = pyfiglet.figlet_format(
-        "zodiac Zone", font="standard", justify="center")
+        "Zodiac Zone", font="standard", justify="center")
     print(title)
 
     # List/ dictionary for random horoscope generation

@@ -4,7 +4,7 @@ def main():
     import random
     import time
     from random import randint
-    import pyfiglet 
+    import pyfiglet
 
     result = pyfiglet.figlet_format("Zodiac Zone")
     print(result)

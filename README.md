@@ -102,7 +102,7 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
 
   ## Existing features 
   - ## Application start 
-    - Main logo was created with [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/#:~:text=pyfiglet%20takes%20ASCII%20text%20and,1%3A%20Text%20in%20default%20font/) to generate ASCII art and give a nice aesthetic to an other wise plain terminal. This 
+    - Main logo was created with [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/#:~:text=pyfiglet%20takes%20ASCII%20text%20and,1%3A%20Text%20in%20default%20font/) to generate ASCII art and give a nice aesthetic to an other wise plain terminal.
     - Landing page with application logo
     - Welcome message.
     - Information about what the appliction is for. 
@@ -136,7 +136,7 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
   ![Horoscope display](media/random-output.png)
 
   - ## End of application
-   - At the end of the horoscope generation cycle, User is asked if they want another horoscop
+   - At the end of the horoscope generation cycle, User is asked if they want another horoscope
    - If the user inputs Y for another horoscope, appliction starts again.
    - If the user inputs N the applications ends.
    - End text was created with [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/#:~:text=pyfiglet%20takes%20ASCII%20text%20and,1%3A%20Text%20in%20default%20font/) to generate ASCII art and add nice exit message for the user.
@@ -144,7 +144,7 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
   ![End of application](media/end-game.png)
   
   - ## Error handling
-   - In the event the user input a wrong day month combination ie chooses day 31 in a month with only 30 days application throw error
+   - In the event the user input a wrong day month combination ie chooses day 31 in a month with only 30 days application throws an error
    - In the event the user inputs anything except a Y or N when asked if they would like another horoscope.
 
   
@@ -196,7 +196,7 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
   - Fixed: Error logic was correct but implementation was incorrect, removed integer (int) from the where I had had month and day defined.
 
 - The application would not except 29th of February as a Date of Birth. 
-  - Fixed: I had a import of datetime from date and this was counteracting the month and day input as it was seeing the user input as a date and not numerical values. As I wasn't working with dates exactly I removed this import and and adjusted the maximum day value to except 29th February as a date of Birth.  
+  - Fixed: I had a import of datetime from date and this was counteracting the month and day input as it was seeing the user input as a date and not numerical values. As I wasn't working with dates exactly so I removed this import and and adjusted the maximum day value for month number 2, to except 29th February as a date of Birth input.  
 
 - PEP8 had amber warning "Line break before binary operator". I had several of these warning relating to a section of code.
   - Fixed: The the lines of code in if , elif, else statement I used to calculate the month and day the user inputs to correspond with a star sign were too long. I had seperated the individual statements into two smaller lines. I placed the "OR" operator on the second line, when I should have had it at the end the first line. Correted this error and code passed PEP8
@@ -227,7 +227,7 @@ This will link it to your Gitpod terminal.
 
     Once the application has been created, steps to deploy the application:
 1. Run the command heroku login -i and log in with you Heroku dashboard credentials. Email and password use to set up Heroku.
-2. Then run the following command heroku git:remote -a Zodiac zone . This is for when you are sigining back into Heroku before pushing updated code to Heroku.
+2. Then run the following command heroku git:remote -a zodiac-zone . This is for when you are sigining back into Heroku before pushing updated code to Heroku.
 3. After you app is linked to your work space you can deploy new version of the app to Heroku with the command git push heroku main.
 4. Your app is now deployed to Heroku
 ---

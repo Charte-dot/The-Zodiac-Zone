@@ -55,7 +55,7 @@ def main():
             "A Capricorn", "An Aquarius", "A Pisces"]
 
     print('Welcome to The Zodiac Zone\n')
-    print('The place to find out you Zodiac sign\n')
+    print('The place to find out your Zodiac sign\n')
     print('And get a personalized horoscope for your sign\n')
     print('Please enter you name to begin\n')
     name = input()

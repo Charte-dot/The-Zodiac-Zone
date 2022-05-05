@@ -172,7 +172,7 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
 
 ---
 
-- # Technologies Used![Answer error](media/answer-error.png)
+- # Technologies Used
   - Github for my Respositiory for the application Zodiac Zone
   - Gitpod for coding the application
   - Heroku for Deployment of the application

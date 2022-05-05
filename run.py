@@ -1,75 +1,67 @@
 ''' zodiac zone imports '''
 
+import os
+import random
+import time
+from random import randint
+import pyfiglet
+
 
 def main():
-    # import os clears the terminal instead of constant scrolling text
-    import os
-
-    # import random for random horoscope generation
-    import random
-
-    # import time creates a delay in text appearing
-    import time
-
-    # import random from random integer creates a random integer value
-    # from the given list/dictionary
-    from random import randint
-
-    # pyfiglet for main logo font
-    import pyfiglet
-
-    # Main logo displayed on heading of terminal for application
+    # ASCII generated art for main logo
     title = pyfiglet.figlet_format(
         "Zodiac Zone", font="standard", justify="center")
+
     print(title)
 
     # List/ dictionary for random horoscope generation
     first = [
-            "Today is perfect for new endeavors.",
-            "Today is the day to cherish and embrace others.",
-            "The tensions of this week will feel heavier today.",
-            "Making yourself useful is a main component of a successful day.",
-            "Today, exercise caution when crossing the street.\n"]
+        "Today is perfect for new endeavors.",
+        "Today is the day to cherish and embrace others.",
+        "The tensions of this week will feel heavier today.",
+        "Making yourself useful is a main component of a successful day.",
+        "Today, exercise caution when crossing the street.\n"]
 
     second = [
-            "Remember that good things come to those who work hard. ",
-            "Dont let the circumstances bring you down."
-            "Patience is key, but sometimes a little push can get it done.",
-            "A smile can get you a long way.\n"]
+        "Remember that good things come to those who work hard. ",
+        "Dont let the circumstances bring you down."
+        "Patience is key, but sometimes a little push can get it done.",
+        "A smile can get you a long way.\n"]
 
     third = [
-            "Looking ahead may seem like a waste, but it pays off in the end.",
-            "Luck favors those who mind the risks and take them. ",
-            "Today is the day for that thing you always wanted to do. ",
-            "Luck is on your side today, so seize it! ",
-            "Things are looking up for you!\n"]
+        "Looking ahead may seem like a waste, but it pays off in the end.",
+        "Luck favors those who mind the risks and take them. ",
+        "Today is the day for that thing you always wanted to do. ",
+        "Luck is on your side today, so seize it! ",
+        "Things are looking up for you!\n"]
 
     color = [
-            "Red", "Green", "Orange", "White", "Black", "Purple", "Silver",
-            "Brown", "Gray", "Pink", "Cream", "Gold", "Teal", "Navy Blue",
-            "Turquoise", "Amber", "Mint"]
+        "Red", "Green", "Orange", "White", "Black", "Purple", "Silver",
+        "Brown", "Gray", "Pink", "Cream", "Gold", "Teal", "Navy Blue",
+        "Turquoise", "Amber", "Mint"]
 
     star = [
-            "An Aries", "A Taurus", "A Gemini", "A Cancer", " A Leo",
-            "A Virgo", "A Libra", " A Scorpio", "A Sagittarius",
-            "A Capricorn", "An Aquarius", "A Pisces"]
+        "An Aries", "A Taurus", "A Gemini", "A Cancer", " A Leo",
+        "A Virgo", "A Libra", " A Scorpio", "A Sagittarius",
+        "A Capricorn", "An Aquarius", "A Pisces"]
 
-    print('Welcome to The Zodiac Zone\n')
-    print('The place to find out your Zodiac sign\n')
-    print('And get a personalized horoscope for your sign\n')
-    print('Please enter you name to begin\n')
-    name = input()
-    print("")
-    print('Hello ' + name)
-    print("")
-    print("Please enter your Month and Day of Birth\n")
+    print('Welcome to The Zodiac Zone \n',
+          'The place to find out your Zodiac sign\n',
+          'And get a personalized horoscope for your sign\n')
 
-    # Defines month funtion
+    name = input('Please enter you name to begin\n')
+
+    print("", 'Hello ' + name)
+
+    print("", "Please enter your Month and Day of Birth\n")
+
+# Defines month funtion
+
     def month():
         """
-    This function only excepts numbers from user input
-    for month of birth
-    """
+        This function only excepts numbers from user input
+        for month of birth
+        """
         while True:
             try:
                 month = int(input("What is your month of birth?[eg.10]\n"))
@@ -90,9 +82,9 @@ def main():
     # Defines day function
     def day():
         """
-    This function only excepts numbers from user input
-    for day of birth
-    """
+        This function only excepts numbers from user input
+        for day of birth
+        """
         while True:
             try:
                 day = int(input("What is your day of birth?:[eg.12]\n"))
@@ -129,11 +121,10 @@ def main():
 
     # Defines day and month and calculates which sign to display
     def sign(day, month):
-
         """
         Depending on user input, if/elif statement will calculate which
-    sign to display after user inputs date of birth
-    """
+        sign to display after user inputs date of birth
+        """
     # returns Aquarius if user input is within month and day parameters
 
         if ((int(month) == 1 and int(day) >= 20) or

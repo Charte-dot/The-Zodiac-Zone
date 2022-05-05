@@ -72,20 +72,19 @@ This application is for fun and out come from the users input is generated rando
 ## User stories
 
 ### First time user:
-  1. To be able to access the application with ease.
-  2. Have clear navigation.
-  3. Easy to read and understand instructions.
-  4. Fun interactive application
-
-### Returning user:
-  1. To be entertained.
-  2. Navigate with ease
-  3. Clear easy path to starting and restarting the application
+  1. As a first time user I want to input my name and the application to display my name
+  2. as a first time user I want to input my day and month of birth for the application to recognise the numerical values I have entered.
+  3. As a first time user I want to have feedback from the application at every stage.
+  4. As a first time user I want to Have clear navigation.
+  5. As a first time user I want easy to read and understand instructions.
+  6. As a first time user I want the application to alert me if I have input invalid data
+  
 
 ### As site owner:
-  1. To be able the output from the generated horoscopes
-  2. To make a fun and entertaining application
-  3. To make sure the user has fun using the application.
+  1. As an admin I want to be able to change the output from the generated horoscopes.
+  2. As an admin I want To make a fun and entertaining application.
+  3. As an admin I want to make sure the user can use the application safely and the alerts for errors advises the user on how they went wrong and how to correct their invalid data input.
+  4. As an admin I want the user to have a great experience with the application.
 
 ## Flowchart
 

@@ -166,12 +166,13 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
 - Errors or warnings were fixed as they appeared such as indentation errors, lines too long or extra space issues. This helped keep the code clean and readable so other errors or bugs that arose were identified more easily.
 - Any testing user inputs were printed back to the console to check all functions and methods were correctly applied to the input.
 - The game was deployed early on in development and checked regularly to ensure game flow and any errors were handled early on.
+- The Full test can be viewed in [Unit test](testing/unit-test.png)
 
 ![PEP8 online check results](media/pep8-test.png)
 
 ---
 
-- # Technologies Used
+- # Technologies Used![Answer error](media/answer-error.png)
   - Github for my Respositiory for the application Zodiac Zone
   - Gitpod for coding the application
   - Heroku for Deployment of the application

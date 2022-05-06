@@ -183,12 +183,20 @@ I designed a basic flowchart on [Lucid Chart](https://www.lucidchart.com/) first
   - Python 
 
 - ## Libraries
-  -  import os
-  -  import random
-  -  import time
-  -  from random import randint
-  -  import pyfiglet 
----
+  -  import os:  
+  To used to clear the terminal at key points to have structure to the app instead of a lot of scrolling text
+  
+  -  import random:  
+  Is used to generate random text from lists provided with the code to creates a personal horoscope.
+  
+  -  import time: 
+       This provides a time delay between text display and gives the user a chance to read the display instead of all the information been delivered in one process.
+  
+  -  from random import randint:  
+  This is utilised for calculating of horoscope sign with in my code. It returns an integer number selected element from the specified range. eg. if month 4 and day 9 was selected, output is Aries.
+  
+  -  import pyfiglet: 
+  Used for for ASCII generated art on main screen and exit message for the user.
 
 - # Bugs
 
@@ -240,7 +248,7 @@ This will link it to your Gitpod terminal.
   After viewing a few horoscope generating projects, this site help me develop the if , elif, else statement used to calculate the month and day the user inputs to correspond with a star sign.
 
 - [Geeks-for-Geeks](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/#:~:text=pyfiglet%20takes%20ASCII%20text%20and,1%3A%20Text%20in%20default%20font)
-  Credit to geeks for geeks on how to use and impliment code for ASCII generated art for main logo and exit message.
+  Credit to geeks for geeks on how to use and implement code for ASCII generated art for main logo and exit message.
 
 - [Amuls-Academy](https://www.youtube.com/watch?v=-Z5qhTocLSo)
   During debugging process, I realised that month would take any day value inc 31 days in a month with only 30 days. So with the help of this video tutorial, I was able to implement code that would recognise 30 days in a 30 day month or throw and error if invalid combination.
